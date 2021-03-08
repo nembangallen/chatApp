@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <div id="ask">
+        <form>
+            <input id="username" type="text" placeholder="Enter NickName" autocomplete="off" required=''>
+            <input id="userSubmitBtn" type="button" value="Submit">
+
+        </form>
+      
+    </div>
+    <div id="online" style="display:none;">
+        <div id="loggedUsers" style="float: right;">
+            
+        </div>
+        
+
+    </div>
+    <div id="my_username"></div>
+    <!-- Group -->
+    <h4>Group Chat</h4>
+    <div id="feedback"></div>
+    <div id="output"></div>
+     <!-- Private -->
+     <h4>PrivateChat</h4>
+     <div id="pfeedback"></div>
+     <div id="poutput"></div>
+
+    <div id="chat" style="display:none;">
+    <form id="group-form">
+        <input id="message" type="text" placeholder="Message" required='' autocomplete="off" >
+        <input id="sendBtn" type="button" value="Send">
+        <input id= "invokePrivate" type="button" value="PrivateChat">
+    </form>
+        
+    </div>
+   
+    <div id="pchat" style="display: none;">
+        <input id="pmessage" type="text" placeholder="Message" autocomplete="off" required>
+        <select name="session" id="selectuser" required></select>
+        <input id="psendBtn" type="button" value="Send">
+        <input id="invokeGroup" type="button" value="GroupChat">
+        
+    </div>
+    <script src="chat.js"></script>
+</body>
+</html>

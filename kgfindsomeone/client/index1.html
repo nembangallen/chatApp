@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSockets</title>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+   <center>
+    <h1>Chat Me !!</h1>
+    <div id="chat" style="width: 250px;background-color: aquamarine; padding: 15px;">
+        <div id="window">
+            <div id="feedback"></div>
+            <div id="output"></div>
+            <div id="warn" style="color: red;"></div>
+        </div>
+       <form id="myform" autocomplete="off">
+        <input id="user" type="text" placeholder="Enter your Name...">
+        <br><br>
+        <input id="message" type="text" placeholder="You message here....">
+        <br><br>
+        <input id="sendbtn" type="button" value="Send">
+       </form>
+    </div>
+   </center>
+    <script src="play.js"></script>
+</body>
+</html>
